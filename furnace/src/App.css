@@ -1,38 +1,81 @@
-.App {
-    text-align: center;
+html, body {
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden;  */
+  /* Add this line to remove scrollbar */
 }
 
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+body {
+  background-image: radial-gradient(#250000, #000000);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+.container {
+  width: 100vw; /* Use viewport width instead of 100% */
+  height: 100vh; /* Use viewport height instead of 100% */
 }
 
-.App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+.circle-container {
+  position: absolute;
+  transform: translateY(10vh);
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
-.App-link {
-    color: #61dafb;
+.circle {
+  width: 30%;
+  height: 100%;
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  background-image: radial-gradient(hsl(30, 100%, 50%), hsl(30, 100%, 50%) 10%, hsla(30, 100%, 50%, 0) 56%);
+  animation: fade-frames 200ms infinite, scale-frames 2s infinite;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+@keyframes fade-frames {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scale-frames {
+  0% {
+    transform: scale3d(0.4, 0.4, 1);
+  }
+
+  50% {
+    transform: scale3d(2.2, 2.2, 1);
+  }
+
+  100% {
+    transform: scale3d(0.4, 0.4, 1);
+  }
+}
+
+.circle-container:nth-child(1) {
+  width: 10px;
+  height: 10px;
+  animation-name: move-frames-1;
+  animation-duration: 7000ms;
+  animation-delay: 11000ms;
+}
+
+@keyframes move-frames-1 {
+  from {
+    transform: translate3d(100vw, 110vh, 0);
+  }
+
+  to {
+    transform: translate3d(100vw, -110vh, 0);
+  }
+}
+
+.circle {
+  animation-delay: 4000ms;
 }
