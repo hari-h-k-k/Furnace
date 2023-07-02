@@ -12,9 +12,16 @@ function Home() {
   }
 
   return (
+    <>
     <div className="container">
       {circleContainers}
     </div>
+    
+    <div style={{background:"green", height:'100px'}}>
+
+    </div>
+    
+    </>
   );
 }
 
