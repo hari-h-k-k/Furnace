@@ -6,7 +6,7 @@ body {
 }
 
 body {
-  background-image: radial-gradient(#180000, #000000);
+  background-image: radial-gradient(at center bottom, #200000, #000000);
 }
 
 .container {
@@ -17,7 +17,7 @@ body {
 .circle-container {
   $particleWidth: 10px;
   $particleNum: 200;
-  $particleColor: hsl(180, 100%, 80%);
+  $particleColor: hsl(30, 100%, 50%);
 
   position: absolute;
   transform: translateY(-10vh);
@@ -25,15 +25,15 @@ body {
   animation-timing-function: linear;
 
   .circle {
-    width: 100%;
+    width: 30%;
     height: 100%;
     border-radius: 50%;
     mix-blend-mode: screen;
     background-image: radial-gradient(
-      hsl(180, 100%, 80%),
-      hsl(180, 100%, 80%) 10%,
-      hsla(180, 100%, 80%, 0) 56%
-    );
+    hsl(30, 100%, 50%),
+    hsl(30, 100%, 50%) 10%,
+    hsla(30, 100%, 50%, 0) 56%
+);
 
     animation: fadein-frames 200ms infinite, scale-frames 2s infinite;
 
@@ -61,7 +61,7 @@ body {
       }
 
       100% {
-        transform: scale3d(0.4, 0.4, 1);
+        transform: scale3d(0, 0, 1);
       }
     }
   }
@@ -88,7 +88,7 @@ body {
             0
           );
         }
-        
+
         to {
           transform: translate3d(
             #{random(100) + vw},
