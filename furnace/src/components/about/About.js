@@ -43,12 +43,17 @@ function About() {
     ]
 
     return (
+      <>
+      <div style={{color:'white', fontSize: '5vh', marginLeft:'3vw', marginTop:'3vh'}}>
+        About Us
+      </div>
         <div style={styles.gridLayout}>
             {content.map( (item,index) => (
             <Card item={item}/>
         ))}
         
       </div>
+      </>
     );
   }
   
