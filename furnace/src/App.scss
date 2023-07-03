@@ -120,3 +120,18 @@ body::-webkit-scrollbar {
     }
   }
 }
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.skeleton-card {
+  height: '500px';
+  width: '300px';
+  background-color: 'green';
+  border-width: "1px";
+  box-shadow: "md";
+  border-radius: "lg";
+}

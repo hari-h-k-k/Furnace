@@ -1,7 +1,9 @@
 import React from 'react';
 import '../../App.scss';
 import StartUp from '../../asset/video/StartUp.mp4';
-import Logo from '../../asset/images/logo.png';
+import Navbar from '../header/Navbar';
+import About from '../about/About';
+import Footer from '../footer/Footer';
 function Home() {
   const circleContainers = [];
   for (let i = 1; i <= 200; i++) {
@@ -10,7 +12,7 @@ function Home() {
         <div className="circle"></div>
       </div>
     );
-  }
+  };
 
   return (
     <>
@@ -18,20 +20,26 @@ function Home() {
         {circleContainers}
       </div>
 
-      <div style={{ height: '15vh' }}>
-      <img src={Logo} style={{ height: '12vh' ,width:'12vh' }}/>
-      </div>
+      <Navbar/>
 
-      <video autoPlay loop muted style={{ height: '85vh', width: '100%', objectFit: 'cover', marginBottom: '-10px' }}>
-        <source src={StartUp} />
+      <video autoPlay loop muted style={styles.vid}>
+        <source src={StartUp}/>
       </video>
 
-      <p style={{height: '100vh' }}>
-        Dummy
-      </p>
-      
+      <About/>
+
+      <Footer/>
+
     </>
   );
 }
 
 export default Home;
+
+const styles = {
+  vid: {
+    height: '85vh', 
+    width: '100%', 
+    objectFit: 'cover'
+  },
+};
