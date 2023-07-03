@@ -10,7 +10,7 @@ function Navbar() {
                 <div style={styles.buttonContainer}>
                     <button style={styles.button}>Home</button>
                     <button style={styles.button}>About Us</button>
-                    <button style={styles.button}>Buissness</button>
+                    <button style={styles.button}>Business</button>
                 </div>
             </div>
         </>

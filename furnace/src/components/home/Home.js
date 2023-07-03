@@ -5,6 +5,7 @@ import About from '../about/About';
 import Footer from '../footer/Footer';
 import Bg from '../bg/Bg';
 import Hero from '../hero/Hero';
+import Hire from '../hire/Hire';
 function Home() {
   
 
@@ -18,6 +19,8 @@ function Home() {
 
       <About/>
 
+      <Hire/>
+      
       <Footer/>
 
     </>

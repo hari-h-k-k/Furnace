@@ -23,7 +23,8 @@ const styles = {
         flexDirection: 'column',
         alignItems: 'center',
         textAlign: 'center',
-        padding: '10px'
+        padding: '10px',
+        border: '1px solid #ccc',
     },
     heading: {
         fontFamily: 'sans-serif',
