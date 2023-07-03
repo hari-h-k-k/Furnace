@@ -1,34 +1,28 @@
 import React from 'react';
 import '../../App.scss';
-import StartUp from '../../asset/video/StartUp.mp4';
+import Navbar from '../header/Navbar';
+import About from '../about/About';
+import Footer from '../footer/Footer';
+import Bg from '../bg/Bg';
+import Hero from '../hero/Hero';
+import Hire from '../hire/Hire';
 function Home() {
-  const circleContainers = [];
-  for (let i = 1; i <= 200; i++) {
-    circleContainers.push(
-      <div className="circle-container" key={i}>
-        <div className="circle"></div>
-      </div>
-    );
-  }
+  
 
   return (
     <>
-      <div className="container">
-        {circleContainers}
-      </div>
+      <Bg/>
 
-      <div style={{ background: "green", height: '10vh' }}>
+      <Navbar/>
 
-      </div>
+      <Hero/>
 
-      <video autoPlay loop muted style={{ height: '90vh', width: '100%', objectFit: 'cover', marginBottom: '-10px' }}>
-        <source src={StartUp} />
-      </video>
+      <About/>
 
-      <p style={{height: '100vh' }}>
-        Dummy
-      </p>
+      <Hire/>
       
+      <Footer/>
+
     </>
   );
 }
