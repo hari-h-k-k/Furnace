@@ -27,12 +27,12 @@ const styles = {
         border: '1px solid #ccc',
     },
     heading: {
-        fontFamily: 'sans-serif',
+        fontFamily: 'cursive',
         fontSize: '24px',
         color: 'white',
     },
     data: {
-        fontFamily: 'Your Attractive Font',
+        fontFamily: 'cursive',
         fontSize: '16px',
         color: 'white',
     },
