@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import { Row, Col } from 'react-simple-flex-grid';
 
 function Hire() {
 
@@ -33,30 +32,42 @@ function Hire() {
             flex: 1,
             color: 'white',
             paddingInline: isMobile ? '10vh' : '5vh',
-            paddingBlock: isMobile ? '10vh' : '10vh',
+            paddingBlock: '10vh',
         },
         text: {
             fontFamily: 'cursive',
             textAlign: 'center',
-            fontSize: 'xx-large'
+            fontSize: 'xx-large',
+            verticalAlign: 'bottom',
+            marginRight: '45px',
         },
         field: {
             // display: 'flex',
             // flexDirection: 'row',
             // placeContent: 'start',
-            // marginBottom: '1vh',
+            marginBottom: '1vh',
         },
         input: {
             marginLeft: '1vh',
             borderRadius: '25px',
             height: '40px',
             width: '60%',
+            background: '-webkit-gradient(linear, center top, center bottom, color-stop(0%, #ccc), color-stop(100%, #fff))',
+            paddingInline: '10px',
+        },
+        messageLabel: {
+            fontFamily: 'cursive',
+            textAlign: 'center',
+            fontSize: 'xx-large',
         },
         message: {
             marginLeft: '1vh',
             borderRadius: '25px',
             height: '20vh',
-            width: '50%'
+            width: '50%',
+            background: '-webkit-gradient(linear, center top, center bottom, color-stop(0%, #ccc), color-stop(100%, #fff))',
+            verticalAlign: 'top',
+            padding: '10px',
         },
         formGroup: {
 
@@ -89,15 +100,22 @@ function Hire() {
             <div style={styles.container}>
                 <div style={styles.leftDiv}>
                     <div style={styles.text}>
-                        <h1 style={{margin : 0, fontSize: "xxx-large"}}>Connect</h1>
-                        <h1 style={{margin : 0, fontSize: "xxx-large"}}>with us!</h1>
+                        {isMobile ? (
+                            <h1 style={{ margin: 0, fontSize: "xxx-large" }}>Connect with us!</h1>
+                        ) : (
+                            <>
+                                <h1 style={{ margin: 0, fontSize: "xxx-large" }}>Connect</h1>
+                                <h1 style={{ margin: 0, fontSize: "xxx-large" }}>with us!</h1>
+                            </>
+                        )}
                     </div>
+
                 </div>
                 <div style={styles.rightDiv}>
                     <form onSubmit={handleSubmit}>
                         <div style={styles.formGroup}>
                             <div style={styles.field}>
-                                <div style={styles.text}>Name: </div>
+                                <label style={styles.text}>Name: </label>
                                 <input
                                     type="text"
                                     name="name"
@@ -108,7 +126,7 @@ function Hire() {
                                 />
                             </div>
                             <div style={styles.field}>
-                                <div style={styles.text}>Email: </div>
+                                <label style={styles.text}>Email: </label>
                                 <input
                                     type="email"
                                     name="email"
@@ -119,18 +137,18 @@ function Hire() {
                                 />
                             </div>
                             <div style={styles.field}>
-                                <div style={styles.text}>Message: </div>
+                                <label style={styles.messageLabel}>Message: </label>
                                 <textarea
                                     name="message"
                                     style={styles.message}
                                     value={formState.message}
                                     onChange={handleChange}
                                     required
-                                ></textarea>
+                                />
                             </div>
                         </div>
                         <div style={styles.submit}>
-                            <button type="submit">Submit</button>
+                            <button style={{cursor: 'pointer'}} type="submit">Submit</button>
                         </div>
                     </form>
                 </div>
