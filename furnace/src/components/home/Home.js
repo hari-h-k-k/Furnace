@@ -7,25 +7,28 @@ import Bg from '../bg/Bg';
 import Hero from '../hero/Hero';
 import Hire from '../hire/Hire';
 import Workflow from '../workflow/Workflow';
+
 function Home() {
-  
 
-  return (
-    <>
-      <Bg/>
 
-      <Navbar/>
+    return (
+        <>
+            <Bg/>
 
-      <Hero/>
-      <Workflow/>
-      <About/>
+            <Navbar/>
 
-      <Hire/>
+            <Hero/>
 
-      <Footer/>
+            {/*<Workflow/>*/}
 
-    </>
-  );
+            <About/>
+
+            <Hire/>
+
+            <Footer/>
+
+        </>
+    );
 }
 
 export default Home;
