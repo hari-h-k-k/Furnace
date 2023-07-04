@@ -1,25 +1,28 @@
 import Flow from '../../asset/images/workFlow.png';
-import Pic from '../../asset/images/carbonFiber.png';
+import Client from '../../asset/images/client.png';
+import Relation from '../../asset/images/relation.png';
+import Planning from '../../asset/images/planning.png';
+import Development from '../../asset/images/development.png';
 
 function Workflow() {
     const Images=[
         {
-            image:Pic,
+            image:Client,
         },
         {
-            image:Pic,
+            image:Client,
         },
         {
-            image:Pic,
+            image:Planning,
         },
         {
-            image:Pic,
+            image:Development,
         },
         {
-            image:Pic,
+            image:Client,
         },
         {
-            image:Pic,
+            image:Relation,
         }
     ];
     const Discription=[
@@ -66,14 +69,23 @@ function Workflow() {
             <div style={{ color: 'white', fontSize: '5vh', marginLeft: '3vw', marginTop: '3vh', marginBottom: '3vh' }}>
                 Workflow
             </div>
-            <div style={{ display:'flex' }}>
-                <div style={{ flex:'3', display:'flex',flexDirection: 'column'}}>
+            <div style={{ display:'flex',height: '360vh', }}>
+                
+                <div style={{ flex:'1', display:'flex',flexDirection: 'column'}}>
                     {Images.map( (item,index) => (
-                        <div style={{ flex:'1' , padding:'20vh'}}>
+                        <div style={{ flex:'1', maxHeight:'100%'}}>
                             <img src={item.image} alt={index} style={styles.image} />
                         </div>
                     ))}
                 </div>
+
+                {/* <div style={{ flex: '1', display: 'flex', flexDirection: 'column' }}>
+                    {Images.map((item, index) => (
+                        <div key={index} style={{ flex: '1', display: 'flex', alignItems: 'stretch' }}>
+                            <img src={item.image} alt={index} style={{ ...styles.image, objectFit: 'cover' }} />
+                        </div>
+                    ))}
+                </div> */}
 
                 <div style={{ flex:'1', display: 'flex', justifyContent: 'center' }}>
                     <img src={Flow} alt="Flow" style={styles.flow} />
@@ -81,7 +93,7 @@ function Workflow() {
 
                 <div style={{ flex:'3', display:'flex',flexDirection: 'column'}}>
                 {Discription.map( (item,index) => (
-                        <div style={{ flex:'1' , padding:'20vh', fontFamily: 'cursive',
+                        <div style={{ flex:'1' , fontFamily: 'cursive',
                         fontSize: '16px',
                         color: 'white',
                         textAlign:'center'}}>
@@ -105,7 +117,7 @@ const styles = {
     },
     image: {
         width: '100%',
-        height: '100%',
+        maxHeight: '100%',
 
     },
 }
