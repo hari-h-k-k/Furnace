@@ -1,6 +1,10 @@
 import Logo from '../../asset/images/logo.png';
 
 function Navbar() {
+    const handleScroll = (ele) => {
+        const element = document.getElementById(ele);
+        element.scrollIntoView({ behavior: 'smooth' });
+      };
     return (
         <>
             <div style={styles.nav}>
@@ -9,8 +13,8 @@ function Navbar() {
                 </div>
                 <div style={styles.buttonContainer}>
                     <button style={styles.button}>Home</button>
-                    <button style={styles.button}>About Us</button>
-                    <button style={styles.button}>Business</button>
+                    <button style={styles.button} onClick={()=>{handleScroll('aboutUs')}}>About Us</button>
+                    <button style={styles.button} onClick={()=>{handleScroll('workFlow')}}>Business</button>
                 </div>
             </div>
         </>

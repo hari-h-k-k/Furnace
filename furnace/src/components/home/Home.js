@@ -19,9 +19,8 @@ function Home() {
 
             <Hero/>
 
-            {/*<Workflow/>*/}
-
             <About/>
+            <Workflow/>
 
             <Hire/>
 

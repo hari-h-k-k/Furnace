@@ -128,7 +128,7 @@ function Hire() {
 
     return (
         <>
-            <div style={styles.container}>
+            <div style={styles.container} id='hire'>
                 <div style={styles.leftDiv}>
                     <div style={styles.text}>
                         {isMobile ? (

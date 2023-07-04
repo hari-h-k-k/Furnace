@@ -68,7 +68,7 @@ function Workflow() {
     }, []);
 
     return (
-        <>
+        <div id="workFlow">
             <div style={{ color: 'white', fontSize: '5vh', marginLeft: '3vw', marginTop: '3vh', marginBottom: '3vh' }}>
                 Workflow
             </div>
@@ -95,16 +95,16 @@ function Workflow() {
                     {Steps.map((item, index) => (
                         <div style={styles.text}>
                             <h1>{item.heading}</h1>
-                                {item.text}
+                            {item.text}
                         </div>
                     ))}
                 </div>
             </div> :
 
-                <div style={{marginInline:'10vh'}}>
+                <div style={{ marginInline: '10vh' }}>
                     {Steps.map((item, index) => (
 
-                        <div style={{ flex: '1', textAlign: 'center' ,margin:'10vh'}}>
+                        <div style={{ flex: '1', textAlign: 'center', margin: '10vh' }}>
                             <img src={item.image} alt={index} style={styles.image} />
                             <div style={styles.text}>
                                 <h1>{item.heading}</h1>
@@ -116,7 +116,7 @@ function Workflow() {
                 </div>
             }
 
-        </>
+        </div>
     );
 }
 
@@ -135,6 +135,6 @@ const styles = {
         fontSize: '16px',
         color: 'white',
         textAlign: 'center',
-        padding:'2vw'
+        padding: '2vw'
     }
 }

@@ -5,6 +5,10 @@ function Hero() {
 
     const strings = ['Begin Your Journey', 'Drive Your Recognition', 'Accelerate Your Reputation', 'Empower Your Potential', 'Unleash Your Success', 'Enhance Your Standing', 'Foster Your Achievements', 'Launch your future'];
 
+    const handleScroll = (ele) => {
+        const element = document.getElementById(ele);
+        element.scrollIntoView({ behavior: 'smooth' });
+      };
 
     return (
         <div style={styles.videoContainer}>
@@ -14,7 +18,7 @@ function Hero() {
             <div style={styles.textOverlay}>
                 <h1 style={styles.text}>Begin Your Journey</h1>
             </div>
-            <button style={styles.button}>Hire</button>
+            <button style={styles.button} onClick={()=>{handleScroll('hire')}}>Hire</button>
         </div>
     );
 }
