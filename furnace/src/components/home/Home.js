@@ -6,7 +6,7 @@ import Footer from '../footer/Footer';
 import Bg from '../bg/Bg';
 import Hero from '../hero/Hero';
 import Hire from '../hire/Hire';
-import Workflow from '../workflow/Workflow';
+import Workflow from '../../Lab.js';
 function Home() {
   
 
