@@ -6,6 +6,8 @@ import Development from '../../asset/images/development.png';
 import React, { useState, useEffect } from 'react';
 import Bg from "../bg/Bg";
 import Navbar from "../header/Navbar";
+import Footer from "../footer/Footer";
+
 function Workflow() {
     const Steps = [
         {
@@ -122,8 +124,9 @@ function Workflow() {
                         ))}
                     </div>
                 }
-
             </div>
+
+            <Footer />
         </>
 
     );

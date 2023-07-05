@@ -55,7 +55,7 @@ function About() {
 
     return (
         <>
-            <div style={styles.gridLayout}>
+            <div id="aboutUs" style={styles.gridLayout}>
                 {aboutContent.aboutUs.map((item, index) => (
                     <Card item={item} key={index} />
                 ))}
