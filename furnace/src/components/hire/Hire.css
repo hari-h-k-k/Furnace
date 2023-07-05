@@ -1,0 +1,53 @@
+.submit {
+    text-align: center;
+}
+
+.message {
+    margin-left: 1vh;
+    border-radius: 25px;
+    height: 20vh;
+    width: 60%;
+    background: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #ccc), color-stop(100%, #fff));
+    vertical-align: top;
+    padding: 10px;
+    font-family: cursive;
+    font-size: 2vh;
+}
+
+.text {
+    font-family: cursive;
+    text-align: center;
+    font-size: xx-large;
+    vertical-align: bottom;
+    margin-right: 40px;
+}
+
+.field {
+    margin-bottom: 2vh;
+}
+
+.input {
+    border-radius: 25px;
+    height: 40px;
+    width: 60%;
+    background: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #ccc), color-stop(100%, #fff));
+    padding-inline: 10px;
+}
+
+.nameInput {
+    margin-left: 8px;
+    font-family: cursive;
+    font-size: 2vh;
+}
+
+.emailInput {
+    margin-left: 13px;
+    font-family: cursive;
+    font-size: 2vh;
+}
+
+.messageLabel {
+    font-family: cursive;
+    text-align: center;
+    font-size: xx-large;
+}

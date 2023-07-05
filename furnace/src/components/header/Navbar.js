@@ -1,20 +1,32 @@
 import Logo from '../../asset/images/logo.png';
+import {useNavigate} from "react-router-dom";
+import React from "react";
+import './Navbar.css';
 
 function Navbar() {
     const handleScroll = (ele) => {
         const element = document.getElementById(ele);
-        element.scrollIntoView({ behavior: 'smooth' });
-      };
+        element.scrollIntoView({behavior: 'smooth'});
+    };
+
+    const navigate = useNavigate();
+
+    const gotoWorkflow = () => {
+        navigate('/workflow');
+    };
     return (
         <>
-            <div style={styles.nav}>
-                <div style={styles.logoContainer}>
-                    <img src={Logo} alt='Furnace' style={styles.logo} />
+            <div className="nav">
+                <div className="logoContainer">
+                    <img className="logo" src={Logo} alt='Furnace'/>
                 </div>
-                <div style={styles.buttonContainer}>
-                    <button style={styles.button}>Home</button>
-                    <button style={styles.button} onClick={()=>{handleScroll('aboutUs')}}>About Us</button>
-                    <button style={styles.button} onClick={()=>{handleScroll('workFlow')}}>Business</button>
+                <div className="buttonContainer">
+                    <button className="button">Home</button>
+                    <button className="button" onClick={() => {
+                        handleScroll('aboutUs')
+                    }}>About Us
+                    </button>
+                    <button className="button" onClick={gotoWorkflow}>Business</button>
                 </div>
             </div>
         </>
@@ -22,36 +34,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-const styles = {
-    logoContainer: {
-        display: 'flex',
-        alignItems: 'center',
-        marginRight: '1rem',
-    },
-    logo: {
-        height: '12vh',
-        width: '12vh',
-        marginLeft:'3px'
-    },
-    nav: {
-        height: '15vh',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-    },
-    buttonContainer: {
-        display: 'flex',
-        alignItems: 'center',
-        alignSelf:'end'
-    },
-    button: {
-        marginLeft: '1rem',
-        padding: '0.5rem 1rem',
-        backgroundColor: 'transparent',
-        border: 'none',
-        color: 'white',
-        fontSize: '1rem',
-        cursor: 'pointer',
-    },
-};

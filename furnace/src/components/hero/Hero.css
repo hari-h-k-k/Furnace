@@ -1,0 +1,40 @@
+.videoContainer {
+    position: relative;
+    background-color: black;
+}
+
+.video {
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
+    margin-bottom: -5px;
+    opacity: 0.6;
+}
+
+.textOverlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+.text {
+    color: white;
+    font-size: 10vh;
+}
+
+.button {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 5vh;
+    color: white;
+    background-color: purple;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+}

@@ -3,7 +3,9 @@ import Client from '../../asset/images/client.png';
 import Relation from '../../asset/images/relation.png';
 import Planning from '../../asset/images/planning.png';
 import Development from '../../asset/images/development.png';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import Bg from "../bg/Bg";
+import Navbar from "../header/Navbar";
 function Workflow() {
     const Steps = [
         {
@@ -68,55 +70,62 @@ function Workflow() {
     }, []);
 
     return (
-        <div id="workFlow">
-            <div style={{ color: 'white', fontSize: '5vh', marginLeft: '3vw', marginTop: '3vh', marginBottom: '3vh' }}>
-                Workflow
-            </div>
+        <>
+            <Bg/>
 
-            {!isMobile ? <div style={{ display: 'flex', flexDirection: 'row', height: '360vh' }}>
+            <Navbar/>
 
-                <div style={{ flex: '0 0 40%', display: 'flex', flexDirection: 'column' }}>
+            <div id="workFlow">
+                <div style={{ color: 'white', fontSize: '5vh', marginLeft: '3vw', marginTop: '3vh', marginBottom: '3vh' }}>
+                    Workflow
+                </div>
 
-                    {Steps.map((item, index) => (
+                {!isMobile ? <div style={{ display: 'flex', flexDirection: 'row', height: '360vh' }}>
 
-                        <div style={{ flex: '1', textAlign: 'center' }}>
-                            <img src={item.image} alt={index} style={styles.image} />
+                        <div style={{ flex: '0 0 40%', display: 'flex', flexDirection: 'column' }}>
+
+                            {Steps.map((item, index) => (
+
+                                <div style={{ flex: '1', textAlign: 'center' }}>
+                                    <img src={item.image} alt={index} style={styles.image} />
+                                </div>
+
+                            ))}
+
                         </div>
 
-                    ))}
-
-                </div>
-
-                <div style={{ flex: '0 0 20%', display: 'flex', justifyContent: 'center' }}>
-                    <img src={Flow} alt="Flow" style={styles.flow} />
-                </div>
-
-                <div style={{ flex: '0 0 40%', display: 'flex', flexDirection: 'column' }}>
-                    {Steps.map((item, index) => (
-                        <div style={styles.text}>
-                            <h1>{item.heading}</h1>
-                            {item.text}
+                        <div style={{ flex: '0 0 20%', display: 'flex', justifyContent: 'center' }}>
+                            <img src={Flow} alt="Flow" style={styles.flow} />
                         </div>
-                    ))}
-                </div>
-            </div> :
 
-                <div style={{ marginInline: '10vh' }}>
-                    {Steps.map((item, index) => (
+                        <div style={{ flex: '0 0 40%', display: 'flex', flexDirection: 'column' }}>
+                            {Steps.map((item, index) => (
+                                <div style={styles.text}>
+                                    <h1>{item.heading}</h1>
+                                    {item.text}
+                                </div>
+                            ))}
+                        </div>
+                    </div> :
 
-                        <div style={{ flex: '1', textAlign: 'center', margin: '10vh' }}>
-                            <img src={item.image} alt={index} style={styles.image} />
-                            <div style={styles.text}>
-                                <h1>{item.heading}</h1>
-                                {item.text}
+                    <div style={{ marginInline: '10vh' }}>
+                        {Steps.map((item, index) => (
+
+                            <div style={{ flex: '1', textAlign: 'center', margin: '10vh' }}>
+                                <img src={item.image} alt={index} style={styles.image} />
+                                <div style={styles.text}>
+                                    <h1>{item.heading}</h1>
+                                    {item.text}
+                                </div>
                             </div>
-                        </div>
 
-                    ))}
-                </div>
-            }
+                        ))}
+                    </div>
+                }
 
-        </div>
+            </div>
+        </>
+
     );
 }
 

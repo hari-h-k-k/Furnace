@@ -20,7 +20,6 @@ function Home() {
             <Hero/>
 
             <About/>
-            <Workflow/>
 
             <Hire/>
 
