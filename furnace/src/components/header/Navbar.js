@@ -21,12 +21,9 @@ function Navbar() {
                     <img className="logo" src={Logo} alt='Furnace'/>
                 </div>
                 <div className="buttonContainer">
-                    <button className="button">Home</button>
-                    <button className="button" onClick={() => {
-                        handleScroll('aboutUs')
-                    }}>About Us
-                    </button>
-                    <button className="button" onClick={gotoWorkflow}>Business</button>
+                    <button className="navButton">Home</button>
+                    <button className="navButton" onClick={() => {handleScroll('aboutUs')}}>About Us</button>
+                    <button className="navButton" onClick={gotoWorkflow}>Business</button>
                 </div>
             </div>
         </>
