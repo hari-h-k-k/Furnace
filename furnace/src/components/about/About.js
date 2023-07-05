@@ -9,7 +9,7 @@ function About() {
 
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth <= 1400 && window.innerWidth >= 1000) {
+            if (window.innerWidth < 1500 && window.innerWidth >= 1000) {
                 setIsMobile(false);
                 setIsTablet(true);
                 setIsScreen(false);

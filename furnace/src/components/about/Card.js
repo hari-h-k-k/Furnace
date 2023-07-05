@@ -15,23 +15,10 @@ function Card({item}) {
     };
 
     const styles = {
-        card: {
-            height: '300px',
-            width: '400px',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            textAlign: 'center',
-            padding: '10px',
-            borderWidth: hover ? '5px' : '',
-            borderStyle: hover ? 'solid' : '',
-            borderColor: hover ? '#ffffff' : '',
-            borderRadius: hover ? '15px' : '',
-            margin: hover ? '5px' : '10px',
-        }, heading: {
-            fontFamily: 'cursive', fontSize: '24px', color: 'white', fontsize: 'xxx-large'
+        heading: {
+            fontFamily: 'cursive', color: 'white', fontsize: 'x-large',
         }, data: {
-            fontFamily: 'cursive', fontSize: '16px', color: 'white',
+            fontFamily: 'cursive', fontSize: 'large', color: 'white',
         },
     };
 
@@ -39,7 +26,7 @@ function Card({item}) {
     return (<>
         <Tilt className="custom-tilt" style={{background: ''}} onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}>
-            <div style={styles.card}>
+            <div className="custom-card" style={styles.card}>
                 <h1 style={styles.heading}>{item.heading}</h1>
                 <p style={styles.data}>{item.description}</p>
             </div>
