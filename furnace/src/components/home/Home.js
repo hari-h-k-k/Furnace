@@ -26,7 +26,7 @@ function Home() {
 
             <Intro />
 
-            {/*<About />*/}
+            <About />
             {/*<p style={{height: '100vh' }}>*/}
             {/*    Dummy*/}
             {/*</p>*/}

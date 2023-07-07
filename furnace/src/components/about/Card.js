@@ -1,40 +1,32 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Tilt from 'react-vanilla-tilt';
+import './About.css';
 
 function Card({item}) {
 
+    const [hover, setHover] = useState(false);
+
+    const handleMouseEnter = () => {
+        setHover(true);
+    };
+
+    const handleMouseLeave = () => {
+        setHover(false);
+    };
+
     return (
         <>
-            <div style={styles.card}>
-                <h2 style={styles.heading}>{item.heading}</h2>
-                <p style={styles.data}>
-                    {item.description}
-                </p>
-            </div>
+            <Tilt className="custom-tilt" style={{background: ''}} onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}>
+                <div className="card">
+                    <h2 className="heading">{item.heading}</h2>
+                    <p className="data">
+                        {item.description}
+                    </p>
+                </div>
+            </Tilt>
         </>
     );
 }
-
-const styles = {
-    card: {
-        height: '300px',
-        width: '400px',
-        // backgroundColor: 'green',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        textAlign: 'center',
-        padding: '10px'
-    },
-    heading: {
-        fontFamily: 'sans-serif',
-        fontSize: '24px',
-        color: 'white',
-    },
-    data: {
-        fontFamily: 'Your Attractive Font',
-        fontSize: '16px',
-        color: 'white',
-    },
-};
 
 export default Card;

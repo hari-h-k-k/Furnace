@@ -37,3 +37,15 @@
     text-align: center;
     z-index: 9999;
 }
+
+@media (max-width: 800px) {
+    .videoContainer {
+        margin-block-end: 10vw;
+    }
+}
+
+@media (min-width: 800px) {
+    .videoContainer {
+        margin-block-end: 5vw;
+    }
+}
