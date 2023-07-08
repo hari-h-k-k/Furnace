@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import '../../App.scss';
 import About from "../about/About";
 import Navbar from "../header/Navbar";
@@ -7,7 +7,6 @@ import Intro from "../Intro/Intro";
 import Background from "../background/Background";
 import Connect from "../connect/Connect";
 import Team from "../team/Team";
-import Clank from '../../asset/audio/Clank.mp3';
 
 function Home({ prop }) {
     const circleContainers = [];

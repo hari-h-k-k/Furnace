@@ -40,7 +40,10 @@ function Card({ item }) {
             >
                 <img src={item.image} alt="Item" className="image" />
             </div>
-            <h2 className="teamHeading">{item.name}</h2>
+            <div style={{display: "contents"}}>
+                <h2 className="teamHeading">{item.name}</h2>
+                <h4 className="teamHeading">{item.position}</h4>
+            </div>
         </div>
     );
 }

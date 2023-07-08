@@ -2,12 +2,14 @@
     {
         "name": "Harikrishnan K",
         "image":"assets/images/team/hari.jpeg",
-        "description": "Our team of skilled professionals possesses a deep understanding and expertise in the latest technologies and programming languages. We have honed our skills through years of hands-on experience and continuous learning, allowing us to tackle complex technical challenges with confidence."
+        "description": "Our team of skilled professionals possesses a deep understanding and expertise in the latest technologies and programming languages. We have honed our skills through years of hands-on experience and continuous learning, allowing us to tackle complex technical challenges with confidence.",
+        "position": "CEO"
     },
     {
         "name": "Surya Narayanan",
         "image":"assets/images/team/surya.jpg",
-        "description": "Our team of skilled professionals possesses a deep understanding and expertise in the latest technologies and programming languages. We have honed our skills through years of hands-on experience and continuous learning, allowing us to tackle complex technical challenges with confidence."
+        "description": "Our team of skilled professionals possesses a deep understanding and expertise in the latest technologies and programming languages. We have honed our skills through years of hands-on experience and continuous learning, allowing us to tackle complex technical challenges with confidence.",
+        "position": "CTO"
     }
 ]
 
