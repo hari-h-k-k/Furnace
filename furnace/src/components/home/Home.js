@@ -1,14 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../../App.scss';
-import StartUp from '../../asset/video/StartUp.mp4';
-import Logo from '../../asset/images/logo.png';
 import About from "../about/About";
 import Navbar from "../header/Navbar";
 import Footer from "../footer/Footer";
 import Intro from "../Intro/Intro";
 import Background from "../background/Background";
-import Team from '../team/Team';
-function Home() {
+import Connect from "../connect/Connect";
+import Team from "../team/Team";
+import Clank from '../../asset/audio/Clank.mp3';
+
+function Home({ prop }) {
     const circleContainers = [];
     for (let i = 1; i <= 200; i++) {
         circleContainers.push(
@@ -20,13 +21,19 @@ function Home() {
 
     return (
         <>
-        <Background />
+            <Background />
 
-<Navbar />
+            <Navbar />
+            {prop === 'home' && (
+                <>
+                    <Intro />
+                    <About />
+                    <Connect />
+                </>
+            )}
 
-            <Intro />
+            {prop === 'team' && <Team />}
 
-            <About />
             <Footer />
         </>
     );
