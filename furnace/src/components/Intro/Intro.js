@@ -2,39 +2,70 @@ import React, { useEffect, useState } from 'react';
 import StartUp from '../../asset/video/StartUp.mp4';
 import './Intro.css';
 
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 function Intro() {
 
-    useEffect(() => {
-        function checkVideoCrop() {
-            const videoElement = document.querySelector('.video');
-            const screenWidth = window.outerWidth;
-            console.log("Screen" + screenWidth)
-            const videoWidth = videoElement.offsetWidth;
-            console.log("Video" + videoWidth)
-            const isCropped = videoWidth > screenWidth;
-            if (isCropped) {
-                console.log('Video is cropped!');
-            } else {
-                console.log('Video is not cropped.');
-            }
-        }
+    // useEffect(() => {
+    //     function checkVideoCrop() {
+    //         const videoElement = document.querySelector('.video');
+    //         const screenWidth = window.outerWidth;
+    //         console.log("Screen" + screenWidth)
+    //         const videoWidth = videoElement.offsetWidth;
+    //         console.log("Video" + videoWidth)
+    //         const isCropped = videoWidth > screenWidth;
+    //         if (isCropped) {
+    //             console.log('Video is cropped!');
+    //         } else {
+    //             console.log('Video is not cropped.');
+    //         }
+    //     }
 
-        checkVideoCrop();
-        window.addEventListener('resize', checkVideoCrop);
-        return () => {
-            window.removeEventListener('resize', checkVideoCrop);
-        };
-    }, []);
+    //     checkVideoCrop();
+    //     window.addEventListener('resize', checkVideoCrop);
+    //     return () => {
+    //         window.removeEventListener('resize', checkVideoCrop);
+    //     };
+    // }, []);
+
+    const settings = {
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+        infinite: true,
+        pauseOnHover: false,
+    };
 
     return (
+        // <div className="videoContainer">
+        //     <video className="video" autoPlay loop muted>
+        //         <source src={StartUp} />
+        //     </video>
+        //     <div className="textOverlay">
+        //         <h1 className="text">Drive Your Recognition</h1>
+        //     </div>
+        // </div>
+
+
         <div className="videoContainer">
-            <video className="video" autoPlay loop muted>
-                <source src={StartUp} />
-            </video>
-            <div className="textOverlay">
-                <h1 className="text">Drive Your Recognition</h1>
-            </div>
+            <Slider {...settings}>
+                <div>
+                    <video className="video" autoPlay loop muted>
+                        <source src={StartUp} />
+                    </video>
+                    <div className="textOverlay">
+                        <h1 className="text">Drive Your Recognition</h1>
+                    </div>
+                </div>
+            </Slider>
         </div>
+
+
+
+
+
     );
 }
 
