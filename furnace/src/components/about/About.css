@@ -180,4 +180,8 @@
     .data {
         font-size: 12px;
     }
+
+    .card {
+        height: 200px;
+    }
 }

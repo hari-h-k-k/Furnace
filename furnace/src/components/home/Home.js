@@ -1,14 +1,14 @@
 import React from 'react';
 import '../../App.scss';
-import StartUp from '../../asset/video/StartUp.mp4';
-import Logo from '../../asset/images/logo.png';
 import About from "../about/About";
 import Navbar from "../header/Navbar";
 import Footer from "../footer/Footer";
 import Intro from "../Intro/Intro";
 import Background from "../background/Background";
+import Connect from "../connect/Connect";
+import Team from "../team/Team";
 
-function Home() {
+function Home({ prop }) {
     const circleContainers = [];
     for (let i = 1; i <= 200; i++) {
         circleContainers.push(
@@ -23,15 +23,17 @@ function Home() {
             <Background />
 
             <Navbar />
+            {prop === 'home' && (
+                <>
+                    <Intro />
+                    <About />
+                    <Connect />
+                </>
+            )}
 
-            <Intro />
+            {prop === 'team' && <Team />}
 
-            <About />
-            {/*<p style={{height: '100vh' }}>*/}
-            {/*    Dummy*/}
-            {/*</p>*/}
             <Footer />
-
         </>
     );
 }

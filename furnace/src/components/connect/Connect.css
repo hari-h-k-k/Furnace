@@ -1,0 +1,261 @@
+.connectContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.leftDiv {
+    flex: 1;
+    color: white;
+    padding-block-start: 15vh;
+    text-align: center;
+    font-family: cursive;
+}
+
+.rightDiv {
+    flex: 1;
+    color: white;
+    padding-inline: 5vh;
+    padding-block: 10vh;
+}
+
+.connectHeading {
+    margin: 0;
+    font-size: xxx-large;
+}
+
+.labelText {
+    font-family: cursive;
+    text-align: center;
+    font-size: xx-large;
+    vertical-align: bottom;
+    margin-right: 40px;
+}
+
+.field {
+    margin-bottom: 2vh;
+}
+
+.input {
+    border-radius: 25px;
+    height: 40px;
+    width: 60%;
+    background: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #ccc), color-stop(100%, #fff));
+    padding-inline: 10px;
+}
+
+.nameInput {
+    margin-left: 8px;
+    font-family: cursive;
+    font-size: 2vh;
+}
+
+.emailInput {
+    margin-left: 13px;
+    font-family: cursive;
+    font-size: 2vh;
+}
+
+.messageLabel {
+    font-family: cursive;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.message {
+    margin-left: 1vh;
+    border-radius: 25px;
+    height: 20vh;
+    width: 60%;
+    background: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #ccc), color-stop(100%, #fff));
+    vertical-align: top;
+    padding: 10px;
+    font-family: cursive;
+    font-size: 2vh;
+}
+
+.submit {
+    text-align: center;
+}
+
+.submitButton {
+    text-align: center;
+}
+
+/*.container.column {*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*.leftDiv.mobile {*/
+/*    padding-block-start: 10vh;*/
+/*}*/
+
+/*.rightDiv.mobile {*/
+/*    padding-inline: 10vh;*/
+/*}*/
+
+.submitButton {
+    border-width: 3px;
+    border-style: solid;
+    font-family: cursive;
+    color: #ffffff;
+    height: 70px;
+    width: 250px;
+    border-radius: 20px;
+    font-size: xx-large;
+    margin-top: 30px;
+    cursor: pointer;
+    background: -webkit-gradient(
+            linear,
+            center top,
+            center bottom,
+            color-stop(0%, #930505),
+            color-stop(100%, #000000)
+    );
+}
+
+.submitButton:hover {
+    border-color: #000000;
+    color: #000000;
+    background: -webkit-gradient(
+            linear,
+            center top,
+            center bottom,
+            color-stop(0%, #ccc),
+            color-stop(100%, #fff)
+    );
+}
+
+
+@media (max-width: 1200px) {
+    .submitButton {
+        height: 50px;
+        width: 200px;
+        font-size: x-large;
+    }
+}
+
+@media (max-width: 1000px) {
+    .connectContainer {
+        flex-direction: column;
+    }
+
+    .leftDiv {
+        text-align: center;
+        padding-block-start: 50px;
+    }
+
+    .rightDiv {
+        text-align: center;
+    }
+
+    .submitButton {
+        height: 50px;
+        width: 200px;
+        font-size: x-large;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .connectHeading {
+        font-size: 35px;
+    }
+
+    .rightDiv {
+        text-align: center;
+    }
+
+    .labelText {
+        font-size: 25px;
+        margin-right: 4vw;
+    }
+
+    .messageLabel {
+        font-size: 25px;
+    }
+
+    .input {
+        width: 60%;
+        font-size: 15px;
+        height: 30px;
+    }
+
+    .message {
+        width: 60%;
+        font-size: 15px;
+    }
+
+    .submitButton {
+        height: 50px;
+        width: 200px;
+        font-size: x-large;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .connectHeading {
+        font-size: 35px;
+    }
+
+    .rightDiv {
+        text-align: center;
+    }
+
+    .labelText {
+        font-size: 20px;
+    }
+
+    .messageLabel {
+        font-size: 20px;
+    }
+
+    .input {
+        width: 60%;
+        font-size: 15px;
+    }
+
+    .message {
+        width: 60%;
+        font-size: 15px;
+    }
+
+    .submitButton {
+        height: 50px;
+        width: 200px;
+        font-size: x-large;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .connectHeading {
+        font-size: 25px;
+    }
+
+    .labelText {
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+    .messageLabel {
+        font-size: 15px;
+    }
+
+    .input {
+        width: 60%;
+        font-size: 12px;
+    }
+
+    .message {
+        width: 60%;
+        font-size: 12px;
+    }
+
+    .submitButton {
+        height: 50px;
+        width: 150px;
+        font-size: large;
+    }
+
+}
