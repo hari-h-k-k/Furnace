@@ -50,13 +50,14 @@
 
 @media (min-width: 2400px) {
     .gridLayout {
-        gap: 2vw;
-        margin: 6vw;
+        gap: 3vw;
+        margin-block: 4vw;
+        margin-inline: 12vw;
     }
 
     .card {
-        width: 20vw;
-        height: 380px;
+        width: 15vw;
+        height: 350px;
     }
 
     .heading {
@@ -65,6 +66,7 @@
 
     .data {
         font-size: x-large;
+        flex: 2;
     }
 
     .gridLayout {
@@ -74,8 +76,9 @@
 
 @media (min-width: 1600px) and (max-width: 2400px) {
     .gridLayout {
-        gap: 1vw;
-        margin: 4vw;
+        gap: 2vw;
+        margin-block: 2vw;
+        margin-inline: 8vw;
     }
 
     .gridLayout {
@@ -94,13 +97,15 @@
 
     .data {
         font-size: large;
+        flex: 2;
     }
 }
 
 @media (min-width: 1200px) and (max-width: 1600px) {
     .gridLayout {
-        gap: 4vw;
-        margin: 3vw;
+        gap: 2vw;
+        margin-block: 2vw;
+        margin-inline: 4vw;
     }
 
     .gridLayout {
@@ -109,7 +114,7 @@
 
     .card {
         width: 25vw;
-        height: 420px;
+        height: 380px;
         padding: 1vw;
     }
 
@@ -119,6 +124,7 @@
 
     .data {
         font-size: 18px;
+        flex: 2;
     }
 }
 
@@ -134,7 +140,7 @@
 
     .card {
         width: 40vw;
-        height: 400px;
+        height: 350px;
         padding: 1vw;
     }
 
@@ -144,6 +150,7 @@
 
     .data {
         font-size: 18px;
+        flex: 2;
     }
 }
 
