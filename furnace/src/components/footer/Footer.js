@@ -7,7 +7,7 @@ function Footer() {
 
     const handleTeamClick = () => {
         if (location.pathname === '/team') {
-            return;
+            window.location.reload();
         }
         navigate('/team');
     };

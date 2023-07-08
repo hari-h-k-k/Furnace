@@ -4,7 +4,6 @@ import team from '../../constants/Team.json'
 
 function Team() {
 
-
     return (
         <div className="team">
             <div className="teamGridLayout">
