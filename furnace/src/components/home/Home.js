@@ -7,6 +7,7 @@ import Intro from "../Intro/Intro";
 import Background from "../background/Background";
 import Connect from "../connect/Connect";
 import Team from "../team/Team";
+import Workflow from "../workflow/Workflow";
 
 function Home({ prop }) {
     const circleContainers = [];
@@ -31,7 +32,9 @@ function Home({ prop }) {
                 </>
             )}
 
-            {prop === 'team' && <Team prop={prop}/>}
+            {prop === 'team' && <Team />}
+
+            {prop === 'workflow' && <Workflow />}
 
             <Footer />
         </>

@@ -8,6 +8,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home prop="home" />}/>
                     <Route path="/team" element={<Home prop="team" />}/>
+                    <Route path="/workflow" element={<Home prop="workflow" />}/>
                 </Routes>
             </BrowserRouter>
         </>
