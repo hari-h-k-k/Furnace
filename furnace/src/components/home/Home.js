@@ -24,6 +24,7 @@ function Home({ prop }) {
             <Background />
 
             <Navbar />
+
             {prop === 'home' && (
                 <>
                     <Intro />
