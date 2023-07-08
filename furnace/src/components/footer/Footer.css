@@ -1,0 +1,9 @@
+.footer {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    opacity: 0.5;
+    place-content: center;
+}

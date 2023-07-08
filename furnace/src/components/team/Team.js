@@ -1,5 +1,5 @@
 import './Team.css';
-import React from 'react';
+import React, {useState} from 'react';
 import team from '../../constants/Team.json'
 
 function Team() {
@@ -18,13 +18,27 @@ function Team() {
 
 export default Team;
 
-function Card({item}) {
+function Card({ item }) {
+    const [isAnimating, setIsAnimating] = useState(false);
 
+    const handleAnimationEnd = () => {
+        setIsAnimating(false);
+    };
+
+    const handleMouseEnter = () => {
+        if (!isAnimating) {
+            setIsAnimating(true);
+        }
+    };
 
     return (
         <div className="teamCard">
-            <div className="image-container">
-                <img src={item.image} alt="Item" className="image"/>
+            <div
+                className={`image-container ${isAnimating ? 'animating' : ''}`}
+                onAnimationEnd={handleAnimationEnd}
+                onMouseEnter={handleMouseEnter}
+            >
+                <img src={item.image} alt="Item" className="image" />
             </div>
             <h2 className="teamHeading">{item.name}</h2>
         </div>

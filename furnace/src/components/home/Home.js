@@ -32,7 +32,7 @@ function Home({ prop }) {
                 </>
             )}
 
-            {prop === 'team' && <Team />}
+            {prop === 'team' && <Team prop={prop}/>}
 
             <Footer />
         </>

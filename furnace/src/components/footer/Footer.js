@@ -1,25 +1,24 @@
-import {useNavigate} from "react-router-dom";
+import {useLocation, useNavigate} from "react-router-dom";
+import './Footer.css'
+
 function Footer() {
     const navigate = useNavigate();
+    const location = useLocation();
+
+    const handleTeamClick = () => {
+        if (location.pathname === '/team') {
+            return;
+        }
+        navigate('/team');
+    };
+
     return (
         <>
-            <div style={styles.footer}>
-            <h2 style={{color:"white"}} onClick={()=>{navigate('/team');}}>Team</h2>
+            <div className="footer">
+                <h2 style={{ color: 'white' }} onClick={handleTeamClick}>Team</h2>
             </div>
         </>
     );
 }
 
 export default Footer;
-
-const styles = {
-    footer: {
-        height: '30vh',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        backgroundColor: 'black',
-        opacity:0.5,
-        placeContent:"center"
-    },
-};
