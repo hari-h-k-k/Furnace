@@ -1,3 +1,9 @@
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .teamCard {
     height: 300px;
     width: 400px;
@@ -11,19 +17,10 @@
     overflow: hidden;
 }
 
-
-.heading,
-.data {
+.teamHeading {
     font-family: cursive;
     color: white;
-}
-
-.heading {
     font-size: 24px;
-}
-
-.data {
-    font-size: 16px;
 }
 
 .teamGridLayout {
@@ -32,61 +29,6 @@
     gap: 2vw;
     place-items: center;
     margin: 2vw;
-}
-
-@media (max-width: 500px) {
-    .card {
-        width: 80%;
-        height: 260px;
-    }
-
-    .heading {
-        font-size: 20px;
-    }
-
-    .data {
-        font-size: 14px;
-    }
-
-    .teamGridLayout {
-        grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
-    }
-}
-
-@media (max-width: 400px) {
-    .heading {
-        font-size: 18px;
-    }
-
-    .data {
-        font-size: 12px;
-    }
-}
-
-@media (min-width: 1500px) {
-    .teamGridLayout {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1200px) {
-    .card {
-        padding: 1vw;
-    }
-}
-
-@media (min-width: 1400px) {
-    .teamGridLayout {
-        gap: 4vw;
-        margin: 3vw;
-    }
-}
-
-@media (max-width: 1400px) {
-    .teamGridLayout {
-        gap: 4vw;
-        margin: 5vw;
-    }
 }
 
 .image-container {
@@ -105,4 +47,48 @@
     object-fit: cover;
     border-radius: 50%;
 }
-  
+
+@media (min-width: 1200px) {
+    .team {
+        height: 63vh;
+    }
+
+    .teamGridLayout {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .teamGridLayout {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .team {
+        height: 63vh;
+    }
+
+    .teamCard {
+        height: 260px;
+        width: 175px;
+    }
+
+    .teamGridLayout {
+        display: block;
+    }
+
+    .teamHeading {
+        flex: 2;
+        font-size: 18px;
+    }
+
+    .image-container {
+        width: 120px;
+        height: 120px;
+    }
+
+
+}

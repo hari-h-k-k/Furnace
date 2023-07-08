@@ -6,7 +6,7 @@ function Team() {
 
 
     return (
-        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <div className="team">
             <div className="teamGridLayout">
                 {team.map((item, index) => (
                     <Card item={item}/>
@@ -26,7 +26,7 @@ function Card({item}) {
             <div className="image-container">
                 <img src={item.image} alt="Item" className="image"/>
             </div>
-            <h2 className="heading">{item.name}</h2>
+            <h2 className="teamHeading">{item.name}</h2>
         </div>
     );
 }
