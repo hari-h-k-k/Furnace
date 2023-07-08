@@ -1,0 +1,120 @@
+/*.card {*/
+/*    height: 300px;*/
+/*    width: 400px;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    text-align: center;*/
+/*    padding: 4vw;*/
+/*    margin: 10px;*/
+/*    position: relative;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.custom-tilt {*/
+/*    box-shadow: none !important;*/
+/*    text-align: -webkit-center;*/
+/*}*/
+
+/*.card:hover {*/
+/*    border-width: 5px;*/
+/*    border-style: solid;*/
+/*    border-color: #ffffff;*/
+/*    border-radius: 15px;*/
+/*    margin: 5px;*/
+/*}*/
+
+/*.heading,*/
+/*.data {*/
+/*    font-family: cursive;*/
+/*    color: white;*/
+/*}*/
+
+/*.heading {*/
+/*    font-size: 24px;*/
+/*}*/
+
+/*.data {*/
+/*    font-size: 16px;*/
+/*}*/
+
+/*.gridLayout {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));*/
+/*    gap: 2vw;*/
+/*    place-items: center;*/
+/*    margin: 2vw;*/
+/*}*/
+
+/*@media (max-width: 500px) {*/
+/*    .card {*/
+/*        width: 80%;*/
+/*        height: 260px;*/
+/*    }*/
+
+/*    .heading {*/
+/*        font-size: 20px;*/
+/*    }*/
+
+/*    .data {*/
+/*        font-size: 14px;*/
+/*    }*/
+
+/*    .gridLayout {*/
+/*        grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 400px) {*/
+/*    .heading {*/
+/*        font-size: 18px;*/
+/*    }*/
+
+/*    .data {*/
+/*        font-size: 12px;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 1500px) {*/
+/*    .gridLayout {*/
+/*        grid-template-columns: repeat(2, 1fr);*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 1200px) {*/
+/*    .card {*/
+/*        padding: 1vw;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 1400px) {*/
+/*    .gridLayout {*/
+/*        gap: 4vw;*/
+/*        margin: 3vw;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 1400px) {*/
+/*    .gridLayout {*/
+/*        gap: 4vw;*/
+/*        margin: 5vw;*/
+/*    }*/
+/*}*/
+
+/*.image-container {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    width: 150px;*/
+/*    height: 150px;*/
+/*    border-radius: 50%;*/
+/*    background-color: #ccc;*/
+/*  }*/
+/*  */
+/*.image {*/
+/*width: 100%;*/
+/*height: 100%;*/
+/*object-fit: cover;*/
+/*border-radius: 50%;*/
+/*}*/
+/**/
