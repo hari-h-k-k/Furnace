@@ -11,19 +11,19 @@ function Team() {
 
 
     return (
-<>
-        <Background />
+        <>
+            <Background />
 
-      <Navbar />
+            <Navbar />
 
-        <div  style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height:"63vh"}}>
-            <div className="gridLayout">
-                {team.map((item, index) => (
-                    <Card item={item} />
-                ))}
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <div className="teamGridLayout">
+                    {team.map((item, index) => (
+                        <Card item={item} />
+                    ))}
+                </div>
             </div>
-        </div>
-        <Footer />
+            <Footer />
         </>
     );
 }
@@ -32,29 +32,16 @@ export default Team;
 
 function Card({ item }) {
 
-    const [hover, setHover] = useState(false);
-
-    const handleMouseEnter = () => {
-        setHover(true);
-    };
-
-    const handleMouseLeave = () => {
-        setHover(false);
-    };
 
     return (
         <>
-        
 
-            <Tilt className="custom-tilt" style={{ background: '' }} onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}>
-                <div className="card">
+                <div className="teamCard">
                     <div className="image-container">
                         <img src={item.image} alt="Item" className="image" />
                     </div>
                     <h2 className="heading">{item.name}</h2>
                 </div>
-            </Tilt>
 
         </>
     );

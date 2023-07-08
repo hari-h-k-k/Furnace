@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 4vw;
+    padding: 2vw;
     margin: 10px;
     position: relative;
     overflow: hidden;
@@ -46,10 +46,117 @@
     margin: 2vw;
 }
 
+
+
+@media (min-width: 2400px) {
+    .gridLayout {
+        gap: 2vw;
+        margin: 6vw;
+    }
+
+    .card {
+        width: 20vw;
+        height: 500px;
+    }
+
+    .heading {
+        font-size: xx-large;
+    }
+
+    .data {
+        font-size: x-large;
+    }
+
+    .gridLayout {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 2400px) {
+    .gridLayout {
+        gap: 1vw;
+        margin: 4vw;
+    }
+
+    .gridLayout {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+        width: 20vw;
+        height: 380px;
+        padding: 2vw;
+    }
+
+    .heading {
+        font-size: x-large;
+    }
+
+    .data {
+        font-size: large;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .gridLayout {
+        gap: 4vw;
+        margin: 3vw;
+    }
+
+    .gridLayout {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+        width: 25vw;
+        height: 420px;
+        padding: 1vw;
+    }
+
+    .heading {
+        font-size: 22px;
+    }
+
+    .data {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .gridLayout {
+        gap: 4vw;
+        margin: 3vw;
+    }
+
+    .gridLayout {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        width: 40vw;
+        height: 400px;
+        padding: 1vw;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    .data {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .gridLayout {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 @media (max-width: 500px) {
     .card {
         width: 80%;
-        height: 260px;
+        height: 300px;
     }
 
     .heading {
@@ -72,31 +179,5 @@
 
     .data {
         font-size: 12px;
-    }
-}
-
-@media (min-width: 1500px) {
-    .gridLayout {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (min-width: 1200px) {
-    .card {
-        padding: 1vw;
-    }
-}
-
-@media (min-width: 1400px) {
-    .gridLayout {
-        gap: 4vw;
-        margin: 3vw;
-    }
-}
-
-@media (max-width: 1400px) {
-    .gridLayout {
-        gap: 4vw;
-        margin: 5vw;
     }
 }
