@@ -1,9 +1,10 @@
+import {useNavigate} from "react-router-dom";
 function Footer() {
-
+    const navigate = useNavigate();
     return (
         <>
             <div style={styles.footer}>
-
+            <h2 style={{color:"white"}} onClick={()=>{navigate('/team');}}>Team</h2>
             </div>
         </>
     );
@@ -19,5 +20,6 @@ const styles = {
         justifyContent: 'space-between',
         backgroundColor: 'black',
         opacity:0.5,
+        placeContent:"center"
     },
 };

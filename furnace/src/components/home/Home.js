@@ -7,7 +7,7 @@ import Navbar from "../header/Navbar";
 import Footer from "../footer/Footer";
 import Intro from "../Intro/Intro";
 import Background from "../background/Background";
-
+import Team from '../team/Team';
 function Home() {
     const circleContainers = [];
     for (let i = 1; i <= 200; i++) {
@@ -20,18 +20,14 @@ function Home() {
 
     return (
         <>
-            <Background />
+        <Background />
 
-            <Navbar />
+<Navbar />
 
             <Intro />
 
             <About />
-            {/*<p style={{height: '100vh' }}>*/}
-            {/*    Dummy*/}
-            {/*</p>*/}
             <Footer />
-
         </>
     );
 }
