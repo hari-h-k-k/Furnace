@@ -9,7 +9,7 @@ function Team() {
         <div className="team">
             <div className="teamGridLayout">
                 {team.map((item, index) => (
-                    <Card item={item}/>
+                    <Card key={index} item={item}/>
                 ))}
             </div>
         </div>
