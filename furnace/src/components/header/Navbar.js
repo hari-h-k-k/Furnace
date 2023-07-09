@@ -33,11 +33,11 @@ function Navbar() {
                 <div className="logoContainer">
                     <img className="logo" src={Logo} alt='Furnace' onClick={handleHome} />
                 </div>
-                <div className="buttonContainer">
-                    <button className="navButton" onClick={handleHome}>Home</button>
-                    <button className="navButton" onClick={() => {handleScroll('aboutUs')}}>About Us</button>
-                    <button className="navButton" onClick={handleWorkflow}>Business</button>
-                </div>
+                {/*<div className="buttonContainer">*/}
+                {/*    <button className="navButton" onClick={handleHome}>Home</button>*/}
+                {/*    <button className="navButton" onClick={() => {handleScroll('aboutUs')}}>About Us</button>*/}
+                {/*    <button className="navButton" onClick={handleWorkflow}>Business</button>*/}
+                {/*</div>*/}
             </div>
         </>
     );
