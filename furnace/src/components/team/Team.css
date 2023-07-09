@@ -15,6 +15,8 @@
     margin: 10px;
     position: relative;
     overflow: hidden;
+    place-content: center;
+    transition: transform 700ms linear;
 }
 
 .teamHeading {
@@ -50,8 +52,13 @@
     border-radius: 50%;
 }
 
-.image-container:hover {
+.teamCard:hover .image-container {
     animation: rotate 700ms linear 1;
+    animation-fill-mode: forwards;
+}
+
+.teamCard:not(:hover) .image-container {
+    animation: slide-back 700ms linear 1;
     animation-fill-mode: forwards;
 }
 
@@ -65,7 +72,15 @@
         transform: translateY(-20px)
         rotateX(0)
         rotateY(-360deg);
+    }
+}
 
+@keyframes slide-back {
+    0% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
     }
 }
 
@@ -89,11 +104,11 @@
 @media (max-width: 500px) {
 
     .team {
-        height: 63vh;
+        height: 75vh;
     }
 
     .teamCard {
-        height: 260px;
+        height: 215px;
         width: 175px;
     }
 

@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a7f37e3-eba6-4843-8aac-89c90a79bde9" name="Changes" comment="Team positions added">
-      <change afterPath="$PROJECT_DIR$/src/components/header/Navbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/workflow/Workflow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/about/About.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/About.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/about/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/team/Team.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/team/Team.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/team/Team.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/team/Team.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
