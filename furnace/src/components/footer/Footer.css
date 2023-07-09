@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    opacity: 0.5;
+    height: 30vh;
+    padding: 0 20px;
+  }
+  
+  .footerLogo {
+    height: 25vh;
+    width: 25vh;
+    cursor: pointer;
+  }
+  
+  .footerTextContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footerText {
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  

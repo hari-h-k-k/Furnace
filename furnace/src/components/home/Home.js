@@ -7,7 +7,7 @@ import Intro from "../Intro/Intro";
 import Background from "../background/Background";
 import Connect from "../connect/Connect";
 import Team from "../team/Team";
-import Clank from '../../asset/audio/Clank.mp3';
+import Workflow from "../workflow/Workflow";
 
 function Home({ prop }) {
     
@@ -26,7 +26,9 @@ function Home({ prop }) {
 
             {prop === 'team' && <Team />}
 
-            <Footer page={prop} />
+            {prop === 'workflow' && <Workflow />}
+
+            <Footer page={prop}/>
         </>
     );
 }

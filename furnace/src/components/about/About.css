@@ -52,12 +52,12 @@
     .gridLayout {
         gap: 3vw;
         margin-block: 4vw;
-        margin-inline: 12vw;
+        margin-inline: 10vw;
     }
 
     .card {
-        width: 15vw;
-        height: 350px;
+        width: 450px;
+        height: 510px;
     }
 
     .heading {

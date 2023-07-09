@@ -5,7 +5,7 @@ import './About.css';
 function About() {
 
     return (
-        <div className="gridLayout">
+        <div id="aboutUs" className="gridLayout">
             {aboutContent.map( (item,index) => (
                 <Card item={item}/>
             ))}

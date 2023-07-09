@@ -1,3 +1,9 @@
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .teamCard {
     height: 300px;
     width: 400px;
@@ -11,19 +17,11 @@
     overflow: hidden;
 }
 
-
-.heading,
-.data {
+.teamHeading {
     font-family: cursive;
     color: white;
-}
-
-.heading {
     font-size: 24px;
-}
-
-.data {
-    font-size: 16px;
+    margin-block: 0;
 }
 
 .teamGridLayout {
@@ -34,61 +32,6 @@
     margin: 2vw;
 }
 
-@media (max-width: 500px) {
-    .card {
-        width: 80%;
-        height: 260px;
-    }
-
-    .heading {
-        font-size: 20px;
-    }
-
-    .data {
-        font-size: 14px;
-    }
-
-    .teamGridLayout {
-        grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
-    }
-}
-
-@media (max-width: 400px) {
-    .heading {
-        font-size: 18px;
-    }
-
-    .data {
-        font-size: 12px;
-    }
-}
-
-@media (min-width: 1500px) {
-    .teamGridLayout {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1200px) {
-    .card {
-        padding: 1vw;
-    }
-}
-
-@media (min-width: 1400px) {
-    .teamGridLayout {
-        gap: 4vw;
-        margin: 3vw;
-    }
-}
-
-@media (max-width: 1400px) {
-    .teamGridLayout {
-        gap: 4vw;
-        margin: 5vw;
-    }
-}
-
 .image-container {
     display: flex;
     justify-content: center;
@@ -97,6 +40,7 @@
     height: 150px;
     border-radius: 50%;
     background-color: #ccc;
+    margin-block-end: 20px;
 }
 
 .image {
@@ -105,4 +49,64 @@
     object-fit: cover;
     border-radius: 50%;
 }
-  
+
+.image-container:hover {
+    animation: rotate 700ms linear 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translateY(0px)
+        rotateX(0deg)
+        rotateY(0deg);
+    }
+    100% {
+        transform: translateY(-20px)
+        rotateX(0)
+        rotateY(-360deg);
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .team {
+        height: 63vh;
+    }
+
+    .teamGridLayout {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .teamGridLayout {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .team {
+        height: 63vh;
+    }
+
+    .teamCard {
+        height: 260px;
+        width: 175px;
+    }
+
+    .teamGridLayout {
+        display: block;
+    }
+
+    .teamHeading {
+        font-size: 18px;
+    }
+
+    .image-container {
+        width: 120px;
+        height: 120px;
+    }
+}
