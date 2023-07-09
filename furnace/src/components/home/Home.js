@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef  } from 'react';
 import '../../App.scss';
 import './Home.css'
 import About from "../about/About";
@@ -11,26 +11,17 @@ import Team from "../team/Team";
 import Workflow from "../workflow/Workflow";
 
 function Home({ prop }) {
-    const circleContainers = [];
-    for (let i = 1; i <= 200; i++) {
-        circleContainers.push(
-            <div className="circle-container" key={i}>
-                <div className="circle"></div>
-            </div>
-        );
-    }
-
+    
     return (
         <>
             <Background />
 
-            <Navbar />
-
+            <Navbar page={prop} />
             {prop === 'home' && (
                 <>
                     <Intro />
-                    <About />
-                    <Connect />
+                    <About/>
+                    <Connect/>
                 </>
             )}
 
@@ -38,7 +29,7 @@ function Home({ prop }) {
 
             {prop === 'workflow' && <Workflow />}
 
-            <Footer />
+            <Footer page={prop}/>
         </>
     );
 }
