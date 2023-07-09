@@ -7,7 +7,6 @@ import './Navbar.css';
 function Navbar() {
     const location = useLocation();
     const handleScroll = (ele) => {
-        // First navigate to navigate('/');
         const element = document.getElementById(ele);
         element.scrollIntoView({behavior: 'smooth'});
     };

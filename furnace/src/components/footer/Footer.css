@@ -7,22 +7,22 @@
     opacity: 0.5;
     height: 30vh;
     padding: 0 20px;
-  }
-  
-  .footerLogo {
+}
+
+.footerLogo {
     height: 25vh;
     width: 25vh;
     cursor: pointer;
-  }
-  
-  .footerTextContainer {
+}
+
+.footerTextContainer {
     display: flex;
     flex-direction: column;
-  }
-  
-  .footerText {
+}
+
+.footerText {
     color: white;
     margin-bottom: 10px;
     cursor: pointer;
-  }
+}
   

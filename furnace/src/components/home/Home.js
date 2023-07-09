@@ -1,5 +1,6 @@
 import React, { useEffect, useRef  } from 'react';
 import '../../App.scss';
+import './Home.css'
 import About from "../about/About";
 import Navbar from "../header/Navbar";
 import Footer from "../footer/Footer";
