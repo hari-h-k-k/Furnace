@@ -6,7 +6,7 @@ function Team() {
 
 
     return (
-        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}} id="team">
             <div className="teamGridLayout">
                 {team.map((item, index) => (
                     <Card item={item}/>

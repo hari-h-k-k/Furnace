@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useEffect, useRef  } from 'react';
 import '../../App.scss';
 import About from "../about/About";
 import Navbar from "../header/Navbar";
@@ -10,31 +10,23 @@ import Team from "../team/Team";
 import Clank from '../../asset/audio/Clank.mp3';
 
 function Home({ prop }) {
-    const circleContainers = [];
-    for (let i = 1; i <= 200; i++) {
-        circleContainers.push(
-            <div className="circle-container" key={i}>
-                <div className="circle"></div>
-            </div>
-        );
-    }
-
+    
     return (
         <>
             <Background />
 
-            <Navbar page={prop}/>
+            <Navbar page={prop} />
             {prop === 'home' && (
                 <>
                     <Intro />
-                    <About />
-                    <Connect />
+                    <About/>
+                    <Connect/>
                 </>
             )}
 
             {prop === 'team' && <Team />}
 
-            <Footer page={prop}/>
+            <Footer page={prop} />
         </>
     );
 }

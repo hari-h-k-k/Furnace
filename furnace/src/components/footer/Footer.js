@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Logo from '../../asset/images/logo.png';
-
+import { Link } from 'react-router-dom';
 function Footer({page}) {
   const navigate = useNavigate();
   return (
@@ -12,9 +12,10 @@ function Footer({page}) {
       <h2 style={styles.text}>Drive Your Recognition.....!!</h2>
       </div>
       <div style={styles.textContainer}>
+        {page==='home'?null:<h2 style={styles.text} onClick={() => { navigate('/'); }}>Home</h2>}
         {page==='team'?null:<h2 style={styles.text} onClick={() => { navigate('/team'); }}>Team</h2>}
-        <h2 style={styles.text}>Text 2</h2>
-        <h2 style={styles.text}>Text 3</h2>
+        <h2 style={styles.text} onClick={() => { navigate('/#about'); }}>About</h2>
+        <h2 style={styles.text} onClick={() => { navigate('/#connect'); }}>Connect</h2>
       </div>
     </div>
   );
