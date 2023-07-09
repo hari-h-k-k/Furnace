@@ -1,6 +1,5 @@
 import React, { useEffect, useRef  } from 'react';
 import '../../App.scss';
-import './Home.css'
 import About from "../about/About";
 import Navbar from "../header/Navbar";
 import Footer from "../footer/Footer";
@@ -9,7 +8,6 @@ import Background from "../background/Background";
 import Connect from "../connect/Connect";
 import Team from "../team/Team";
 import Workflow from "../workflow/Workflow";
-
 function Home({ prop }) {
     
     return (
@@ -17,6 +15,7 @@ function Home({ prop }) {
             <Background />
 
             <Navbar page={prop} />
+            <div style={{minHeight:"60vh"}}>
             {prop === 'home' && (
                 <>
                     <Intro />
@@ -27,8 +26,8 @@ function Home({ prop }) {
 
             {prop === 'team' && <Team />}
 
-            {prop === 'workflow' && <Workflow />}
-
+            {prop === 'workflow' && <Workflow page={prop}/>}
+            </div>
             <Footer page={prop}/>
         </>
     );
