@@ -1,0 +1,47 @@
+.wfTitle{
+color: 'white';
+font-size: '5vh'; 
+margin-left: '3vw';
+margin-top: '3vh'; 
+margin-bottom: '3vh';
+}
+
+.wfScr {
+    display: flex;
+    flex-direction: row;
+    height: 360vh;
+    justify-content: center;
+}
+
+.wfScrImgCol {
+    flex: '0 0 45%';
+    display: flex;
+    flex-direction: column;
+  }
+
+.wfScrImgDiv {
+    flex: 1;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+}
+
+.wfDesText{
+    flex: 1;
+    font-family: cursive;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 2vw;
+}
+
+@media (max-width:500px) {
+    .wfDesText {
+        font-size: 10px;
+    }
+    .wfScrImgDiv{
+        width: 200px;
+        height: 100px;
+    }
+
+}
