@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a7f37e3-eba6-4843-8aac-89c90a79bde9" name="Changes" comment="Slide Back">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.js" afterDir="false" />
+    <list default="true" id="0a7f37e3-eba6-4843-8aac-89c90a79bde9" name="Changes" comment="Workflow reviewed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Intro/Intro.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Intro/Intro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Intro/Intro.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Intro/Intro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/About.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/About.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/connect/Connect.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/connect/Connect.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/connect/Connect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/connect/Connect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/team/Team.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/team/Team.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="Bravo" />
+        <entry key="$PROJECT_DIR$/.." value="Collection" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -43,7 +51,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Collection",
+    "git-widget-placeholder": "Bravo",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -162,7 +170,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688894165295</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Conflict Resolved">
+      <created>1688924479422</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1688924479422</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Workflow reviewed">
+      <created>1689096071506</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1689096071506</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +239,8 @@
     <MESSAGE value="Team Supreme" />
     <MESSAGE value="Team positions added" />
     <MESSAGE value="Slide Back" />
-    <option name="LAST_COMMIT_MESSAGE" value="Slide Back" />
+    <MESSAGE value="Conflict Resolved" />
+    <MESSAGE value="Workflow reviewed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Workflow reviewed" />
   </component>
 </project>

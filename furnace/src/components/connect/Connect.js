@@ -1,23 +1,7 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import './Connect.css';
 
 function Hire() {
-
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        const handleResize = () => {
-            const isMobile = window.innerWidth <= 1000;
-            setIsMobile(isMobile);
-        };
-
-        window.addEventListener('resize', handleResize);
-        handleResize();
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
 
     const [formState, setFormState] = useState({
         name: '',
@@ -42,16 +26,9 @@ function Hire() {
             <div className="connectContainer" id='connect'>
                 <div className="leftDiv">
                     <div>
-                        {isMobile ? (
-                            <h1 className="connectHeading">Connect with us!</h1>
-                        ) : (
-                            <>
-                                <h1 className="connectHeading">Connect</h1>
-                                <h1 className="connectHeading">with us!</h1>
-                            </>
-                        )}
+                        <h1 className="connectHeading">Tap into our Network!</h1>
+                        <h5 className="connectSubHeading">Open the lines of Communication...</h5>
                     </div>
-
                 </div>
                 <div className="rightDiv">
                     <form onSubmit={handleSubmit}>

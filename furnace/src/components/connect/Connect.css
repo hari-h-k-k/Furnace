@@ -1,6 +1,8 @@
 .connectContainer {
     display: flex;
     flex-direction: row;
+    padding-inline: 5vh;
+    column-gap: 5vh;
 }
 
 .leftDiv {
@@ -14,13 +16,18 @@
 .rightDiv {
     flex: 1;
     color: white;
-    padding-inline: 5vh;
+    /*padding-inline: 5vh;*/
     padding-block: 10vh;
 }
 
 .connectHeading {
     margin: 0;
     font-size: xxx-large;
+}
+
+.connectSubHeading {
+    margin-top: 10px;
+    font-size: x-large;
 }
 
 .labelText {
@@ -81,18 +88,6 @@
     text-align: center;
 }
 
-/*.container.column {*/
-/*    flex-direction: column;*/
-/*}*/
-
-/*.leftDiv.mobile {*/
-/*    padding-block-start: 10vh;*/
-/*}*/
-
-/*.rightDiv.mobile {*/
-/*    padding-inline: 10vh;*/
-/*}*/
-
 .submitButton {
     border-width: 3px;
     border-style: solid;
@@ -127,17 +122,11 @@
 
 
 @media (max-width: 1200px) {
-    .submitButton {
-        height: 50px;
-        width: 200px;
-        font-size: x-large;
-    }
-}
-
-@media (max-width: 1000px) {
     .connectContainer {
         flex-direction: column;
     }
+
+
 
     .leftDiv {
         text-align: center;
@@ -147,6 +136,10 @@
     .rightDiv {
         text-align: center;
     }
+}
+
+@media (max-width: 1000px) {
+
 
     .submitButton {
         height: 50px;
@@ -159,6 +152,10 @@
 
     .connectHeading {
         font-size: 35px;
+    }
+
+    .connectSubHeading {
+        font-size: 25px;
     }
 
     .rightDiv {
@@ -195,7 +192,11 @@
 @media (max-width: 600px) {
 
     .connectHeading {
-        font-size: 35px;
+        font-size: 25px;
+    }
+
+    .connectSubHeading {
+        font-size: 15px;
     }
 
     .rightDiv {
@@ -230,7 +231,11 @@
 @media (max-width: 400px) {
 
     .connectHeading {
-        font-size: 25px;
+        font-size: 20px;
+    }
+
+    .connectSubHeading {
+        font-size: 10px;
     }
 
     .labelText {

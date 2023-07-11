@@ -32,6 +32,7 @@
     gap: 2vw;
     place-items: center;
     margin: 2vw;
+    margin-top: 100px;
 }
 
 .image-container {
@@ -114,6 +115,7 @@
 
     .teamGridLayout {
         display: block;
+        margin-top: 50px;
     }
 
     .teamHeading {

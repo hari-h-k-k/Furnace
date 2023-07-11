@@ -22,7 +22,7 @@ function Workflow() {
     }, []);
 
     return (
-        <div id="workFlow">
+        <div id="workFlow" className="workflow">
 
             <div className='wfDesText'>
                 <h1>Workflow</h1>

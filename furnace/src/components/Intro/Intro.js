@@ -27,14 +27,20 @@ function Intro() {
     }, []);
 
     return (
-        <div className="videoContainer">
-            <video className="video" autoPlay loop muted>
-                <source src={StartUp} />
-            </video>
-            <div className="textOverlay">
-                <h1 className="introText">Drive Your Recognition</h1>
+        <>
+            <div className="videoContainer">
+                <div className="gradientOverlay"></div>
+                <video className="video" autoPlay loop muted>
+                    <source src={StartUp} />
+                </video>
+                <div className="textOverlay">
+                    <h1 className="introText">Drive Your Recognition</h1>
+                </div>
             </div>
-        </div>
+            <div className="transition">
+
+            </div>
+        </>
     );
 }
 

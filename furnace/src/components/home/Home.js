@@ -15,7 +15,7 @@ function Home({ prop }) {
             <Background />
 
             <Navbar page={prop} />
-            <div style={{minHeight:"60vh"}}>
+            <div style={{minHeight:"70vh"}}>
             {prop === 'home' && (
                 <>
                     <Intro />

@@ -3,14 +3,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
-    opacity: 0.5;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0));
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 
 .logoContainer {
     display: flex;
     align-items: center;
-    margin-right: 1rem;
+    margin-inline: 20px;
 }
 
 .logo {
@@ -23,12 +25,14 @@
 .buttonContainer {
     display: flex;
     align-items: center;
-    align-self: end;
+    column-gap: 40px;
+    align-self: center;
+    margin-inline: 40px;
 }
 
 .navButton {
-    margin-left: 1rem;
-    padding: 0.5rem 1rem;
+    margin-inline: 10px;
+    padding: 10px 0;
     background-color: transparent;
     border: none;
     color: white;
