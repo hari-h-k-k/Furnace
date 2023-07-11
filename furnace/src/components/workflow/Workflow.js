@@ -2,6 +2,7 @@ import Flow from '../../asset/images/workFlow.png';
 import Steps from '../../constants/Workflow.json'
 import "./Workflow.css"
 import { useState, useEffect } from 'react';
+
 function Workflow() {
 
     const [isMobile, setIsMobile] = useState(false);
@@ -24,7 +25,7 @@ function Workflow() {
         <div id="workFlow">
 
             <div className='wfDesText'>
-                <h1>!!....WorkFlow....!!</h1>
+                <h1>Workflow</h1>
             </div>
             {!isMobile
                 ? <div className='wfScr'>
@@ -75,7 +76,6 @@ function Workflow() {
                     ))}
                 </div>
             }
-
         </div>
     );
 }
@@ -86,11 +86,4 @@ const styles = {
     flow: {
         height: '100%',
     },
-    text: {
-        flex: '1', fontFamily: 'cursive',
-        fontSize: '16px',
-        color: 'white',
-        textAlign: 'center',
-        padding: '2vw'
-    }
 }
