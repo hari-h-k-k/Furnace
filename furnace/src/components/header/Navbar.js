@@ -1,4 +1,4 @@
-import Logo from '../../asset/images/logo.png';
+import Logo from '../../asset/images/anvilOutlined.png';
 
 import { useLocation, useNavigate } from "react-router-dom";
 import React from "react";

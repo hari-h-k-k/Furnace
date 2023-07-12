@@ -1,6 +1,6 @@
 import {useNavigate} from "react-router-dom";
 import './Footer.css';
-import Logo from '../../asset/images/logo.png';
+import Logo from '../../asset/images/anvilOutlined.png';
 import {Link} from 'react-router-dom';
 
 function Footer({page}) {
